@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: Helvetica;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 .site-header-wrapper .logo {
@@ -62,4 +62,11 @@ li a {
 .links-right {
     align-items: center;
     width: 20%;
+}
+#primeraSeccion{
+    width: 100%;
+}
+.slider {
+    width: 90%;
+    margin: auto;
 }
