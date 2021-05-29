@@ -1,7 +1,9 @@
 .slider {
-	width: 95%;
+	position: relative;
+	width: 90%;
 	margin: auto;
 	overflow: hidden;
+    text-align: center;
 }
 
 .slider ul {
@@ -19,6 +21,10 @@
 
 .slider img {
 	width: 100%;
+	height: 100%;
+}
+img:hover{
+	filter: blur(5px);
 }
 
 @keyframes cambio {
@@ -33,4 +39,10 @@
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+}
+.centrado{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

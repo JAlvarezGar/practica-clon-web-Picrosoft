@@ -56,7 +56,7 @@ li a {
 }
 
 .links-left {
-    width: 50%;
+    width: 40%;
 }
 
 .links-right {
@@ -65,8 +65,4 @@ li a {
 }
 #primeraSeccion{
     width: 100%;
-}
-.slider {
-    width: 90%;
-    margin: auto;
 }
