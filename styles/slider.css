@@ -3,14 +3,14 @@
 	width: 90%;
 	margin: auto;
 	overflow: hidden;
-    text-align: center;
+	text-align: left;
 }
 
 .slider ul {
 	display: flex;
 	padding: 0;
 	width: 400%;
-	
+
 	animation: cambio 20s infinite alternate linear;
 }
 
@@ -23,26 +23,121 @@
 	width: 100%;
 	height: 100%;
 }
-img:hover{
-	filter: blur(5px);
+
+.slider #encabezadoFoto {
+	font-size: 24px;
+	font-weight: 600;
+	position: absolute;
+	top: 1.5in;
+	left: .2in;
+	font-family: 'Segoe UI';
+
 }
 
-@keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+.slider #textoFoto {
+
+	display: flex;
+	position: absolute;
+	flex-wrap: wrap;
+	max-width: 500px;
+	top: 2in;
+	left: .2in;
+	font-family: 'Segoe UI';
+
 }
-.centrado{
+
+.slider #comprar {
+	position: absolute;
+	left: 0.2in;
+	top: 2.6in;
+	padding: 10px;
+	color: white;
+	background-color: #262626;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0;
+
+}
+
+.slider #comprar:hover {
+	text-decoration: underline;
+}
+
+.slider #compraPack {
+	position: absolute;
+	left: 2in;
+	top: 2.6in;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 0;
+	border: none;
+	background-color: transparent;
+
+}
+
+.slider #compraPack:hover {
+	text-decoration: underline;
+}
+
+.slider #boton1 {
+	position: absolute;
+	left: 49%;
+	top: 90%;
+	width: 5px;
+	height: 5px;
+}
+
+.slider #boton2 {
+	position: absolute;
+	left: 51%;
+	top: 90%;
+	width: 5px;
+	height: 5px;
+
+}
+
+
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+
+	20% {
+		margin-left: 0;
+	}
+
+	25% {
+		margin-left: -100%;
+	}
+
+	45% {
+		margin-left: -100%;
+	}
+
+	50% {
+		margin-left: -200%;
+	}
+
+	70% {
+		margin-left: -200%;
+	}
+
+	75% {
+		margin-left: -300%;
+	}
+
+	100% {
+		margin-left: -300%;
+	}
+}
+
+.centrado {
 	position: absolute;
 	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
