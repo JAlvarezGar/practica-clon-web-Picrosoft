@@ -15,9 +15,21 @@ const slider = () => {
     var boton1 = document.getElementById('boton1');
     var boton2 = document.getElementById('boton2');
     boton1.onclick = () => {
+        document.getElementById('boton1').style.backgroundColor="black";
+        document.getElementById('boton1').style.width="10px";
+        document.getElementById('boton1').style.height="10px";
+        document.getElementById('boton2').style.backgroundColor="transparent";
+        document.getElementById('boton2').style.width="8px";
+        document.getElementById('boton2').style.height="8px";
         bt1();
     }
     boton2.onclick = () => {
+        document.getElementById('boton1').style.backgroundColor="transparent";
+        document.getElementById('boton1').style.width="8px";
+        document.getElementById('boton1').style.height="8px";
+        document.getElementById('boton2').style.backgroundColor="black"
+        document.getElementById('boton2').style.width="10px";
+        document.getElementById('boton2').style.height="10px";
         bt2();
     }
 
