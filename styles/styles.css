@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: Helvetica;
-    margin:  auto;
+    margin: auto;
 }
 
 .site-header-wrapper .logo {
@@ -39,6 +39,15 @@ li a {
     color: #262626;
 }
 
+.todoMicro {
+    display: flex;
+
+}
+
+.todoMicro img {
+    justify-content: center;
+}
+
 
 .site-header-wrapper {
     display: flex;
@@ -61,8 +70,11 @@ li a {
 
 .links-right {
     align-items: center;
-    width: 20%;
+    width: 25%;
 }
-#primeraSeccion{
+
+#primeraSeccion {
     width: 100%;
 }
+
+

@@ -5,6 +5,12 @@ var imagenes = new Array(
 var flag = false;
 const slider = () => {
 
+    var fizq = document.getElementById('flechaIzq');
+    var fdcha = document.getElementById('flechaDcha');
+    var imgSlider = document.getElementById('imagen');
+    fizq.style.display = 'none';
+    fdcha.style.display = 'none';
+
 
     if (flag == true) {
         bt1();
@@ -12,28 +18,51 @@ const slider = () => {
     } else {
         bt2();
     }
-    var boton1 = document.getElementById('boton1');
-    var boton2 = document.getElementById('boton2');
+
+    /**FLECHAS LATERALES*/
+
+    // AL PASAR EL MOUSE POR LA IMAGEN PRINCIPAL APARECEN O DESAPARECEN
+    imgSlider.onmouseover = () => {
+        fizq.style.display = 'inherit';
+        fdcha.style.display = 'inherit';
+    }
+    imgSlider.onmouseout = () => {
+        fizq.style.display = 'none';
+        fdcha.style.display = 'none';
+    }
+    // al hacer click cambia de foto
+    fizq.onclick = () => {
+        bt1();
+    }
+    fdcha.onclick=()=>{
+        bt2();
+    }
+
+    /** BOTONES DE PUNTO SITUADOS EN LA PARTE BAJA DE LA IMAGEN PRINCIPAL */
+
+    // AL HACER CLICK CAMBIA DE FOTO DE APARIENCIA EL BOTON DE PUNTO
     boton1.onclick = () => {
-        document.getElementById('boton1').style.backgroundColor="black";
-        document.getElementById('boton1').style.width="10px";
-        document.getElementById('boton1').style.height="10px";
-        document.getElementById('boton2').style.backgroundColor="transparent";
-        document.getElementById('boton2').style.width="8px";
-        document.getElementById('boton2').style.height="8px";
+        document.getElementById('boton1').style.backgroundColor = "black";
+        document.getElementById('boton1').style.width = "10px";
+        document.getElementById('boton1').style.height = "10px";
+        document.getElementById('boton2').style.backgroundColor = "transparent";
+        document.getElementById('boton2').style.width = "8px";
+        document.getElementById('boton2').style.height = "8px";
         bt1();
     }
     boton2.onclick = () => {
-        document.getElementById('boton1').style.backgroundColor="transparent";
-        document.getElementById('boton1').style.width="8px";
-        document.getElementById('boton1').style.height="8px";
-        document.getElementById('boton2').style.backgroundColor="black"
-        document.getElementById('boton2').style.width="10px";
-        document.getElementById('boton2').style.height="10px";
+        document.getElementById('boton1').style.backgroundColor = "transparent";
+        document.getElementById('boton1').style.width = "8px";
+        document.getElementById('boton1').style.height = "8px";
+        document.getElementById('boton2').style.backgroundColor = "black"
+        document.getElementById('boton2').style.width = "10px";
+        document.getElementById('boton2').style.height = "10px";
         bt2();
     }
 
 }
+
+/** ESTOS SON LOS METODOS PRINCIPALES DEL SLIDER */
 
 const bt1 = () => {
     document.getElementById("imagen").src = imagenes[0];
@@ -49,6 +78,7 @@ const bt2 = () => {
     flag = true;
 }
 
+// AL CARGAR LA PAGINA LLAMA A LA FUNCION PRINCIPAL slider();
 onload = () => {
     slider();
 
