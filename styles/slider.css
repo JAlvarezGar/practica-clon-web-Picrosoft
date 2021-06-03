@@ -120,6 +120,8 @@
 	background-position-x: 50%;
 	background-position-y: 50%;
 	border-radius: 100%;
+	border-style: solid;
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
 	background-size: contain;
 }
 
@@ -135,6 +137,8 @@
 	background-position-x: 50%;
 	background-position-y: 50%;
 	border-radius: 100%;
+	border-style: solid;
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
 	background-size: contain;
 }
 

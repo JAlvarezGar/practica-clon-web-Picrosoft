@@ -49,6 +49,7 @@ const slider = () => {
         document.getElementById('boton2').style.width = "8px";
         document.getElementById('boton2').style.height = "8px";
         bt1();
+
     }
     boton2.onclick = () => {
         document.getElementById('boton1').style.backgroundColor = "transparent";
@@ -58,6 +59,7 @@ const slider = () => {
         document.getElementById('boton2').style.width = "10px";
         document.getElementById('boton2').style.height = "10px";
         bt2();
+
     }
 
 }
@@ -68,6 +70,9 @@ const bt1 = () => {
     document.getElementById("imagen").src = imagenes[0];
     document.getElementById('encabezadoFoto').innerHTML = "Nuevo Surface Laptop 4";
     document.getElementById('textoFoto').innerHTML = "Ahorra hasta 149,85€ en tu Surface Laptop Go";
+    document.getElementById('boton2').style.backgroundColor = "transparent";
+    document.getElementById('boton2').style.width = "8px";
+    document.getElementById('boton2').style.height = "8px";
     flag = false;
 }
 
@@ -75,6 +80,9 @@ const bt2 = () => {
     document.getElementById("imagen").src = imagenes[1];
     document.getElementById('encabezadoFoto').innerHTML = "Hasta 15% de dedescuento";
     document.getElementById('textoFoto').innerHTML = "Disfruta de un equilibrio perfecto entre elegancia, velocidad para realizar multitareas y desempeño optimizado";
+    document.getElementById('boton1').style.backgroundColor = "transparent";
+    document.getElementById('boton1').style.width = "8px";
+    document.getElementById('boton1').style.height = "8px";
     flag = true;
 }
 
