@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin: auto;
+    margin:0  auto;
 }
 
 .site-header-wrapper .logo {
@@ -73,9 +73,7 @@ li a {
     width: 25%;
 }
 
-#primeraSeccion {
-    width: 100%;
-}
+
 
 .iconosGrandes {
     display: flex;
@@ -94,13 +92,10 @@ li a {
 }
 
 .segundaSeccion {
-    display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .tiraImagenes {
-    position: absolute;
     display: flex;
     flex-direction: row;
     margin-inline-end: 5%;
@@ -109,10 +104,10 @@ li a {
 }
 
 .tiraImagenes .columna {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
 }
 
 .tiraImagenes img {
